@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>A2 - FORM</title>
+</head>
+<body>
+  <div>
+  <h1>Formulário A2</h1>
+    <form  action="salvar.php" method="GET" enctype="multipart/form-data">
+
+       <label for="txtNome">Nome:</label>
+       <input type="text" name="txtNome" id="txtNome"/><br>
+
+        <label for="txtPreco">Preço:</label>
+        <input type="text" name="txtPreco" id="txtPreco"/> <br>
+
+        <label for="txtQuantidade">Quantidade:</label>
+        <input type="text" name="txtQuantidade" id="txtPreco"/> <br>
+
+        <label for="foto">Foto: </label>
+        <input type="file" name="foto" /> <br>
+
+        <input type="date" name="txtValidade" 
+        min="1900-01-01" max="2020-04-27" 
+        value="2020-04-27" /> <br>
+
+        <label for="categoria">Categoria: </label>
+        <select name="categoria">
+            <option value="0">Selecione...</option>
+            <option value="1">Enlatados</option>
+            <option value="2">Hortifruti</option>
+            <option value="3">Bebidas</option>
+            <option value="4">Doces</option>
+        </select><br>
+
+        <input type="submit" value="Salvar" />
+        <input type="reset" value="Limpar" />
+
+    </form>
+  </div>
+</body>
+</html>
