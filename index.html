@@ -9,7 +9,7 @@
 <body>
   <div>
   <h1>Formulário A2</h1>
-    <form  action="salvar.php" method="GET" enctype="multipart/form-data">
+    <form enctype="multipart/form-data">
 
        <label for="txtNome">Nome:</label>
        <input type="text" name="txtNome" id="txtNome"/><br>
@@ -18,28 +18,31 @@
         <input type="text" name="txtPreco" id="txtPreco"/> <br>
 
         <label for="txtQuantidade">Quantidade:</label>
-        <input type="text" name="txtQuantidade" id="txtPreco"/> <br>
+        <input type="text" name="txtQuantidade" id="txtQuantidade"/> <br>
 
         <label for="foto">Foto: </label>
         <input type="file" name="foto" /> <br>
 
-        <input type="date" name="txtValidade" 
+        <!--<label for="txtValidade">Data de validade</label>
+        <input type="date" name="txtValidade" id="txtValidade"
         min="1900-01-01" max="2020-04-27" 
-        value="2020-04-27" /> <br>
+        value="2020-04-27" /> <br-->
 
         <label for="categoria">Categoria: </label>
-        <select name="categoria">
-            <option value="0">Selecione...</option>
+        <select name="categoria" id="categoria">
+            <option value="0" selected>Selecione...</option>
             <option value="1">Enlatados</option>
             <option value="2">Hortifruti</option>
             <option value="3">Bebidas</option>
             <option value="4">Doces</option>
         </select><br>
 
-        <input type="submit" value="Salvar" />
-        <input type="reset" value="Limpar" />
+        <input type="submit" onclick="Salvar()" />
+        <input type="reset" onclick="Limpar()" />
 
     </form>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
